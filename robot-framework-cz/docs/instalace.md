@@ -349,7 +349,7 @@ rfbrowser init
 - [Browser Library Installation](https://marketsquare.github.io/robotframework-browser/Browser.html#installation)
 
 ### Video Tutoriály
-- [Video #1: První automatizovaný test](link_sem)
+- [Video #1: První automatizovaný test] https://www.youtube.com/watch?v=Ohm8ULxYkJU&list=PLW5vnFw56fckGidTf3P9SMka6iLjST-8C
 
 ### Community Help
 - [Robot Framework Slack](https://robotframework-slack-invite.herokuapp.com/)
@@ -374,8 +374,8 @@ Před začátkem testování zkontroluj:
 
 **🎉 Gratulujeme! Jsi ready na první test!**
 
-**📺 Pokračuj na:** [Video #1 - První automatizovaný test](../examples/video_1/)
+**📺 Pokračuj na:** [Video #1 - První automatizovaný test]
 
 ---
 
-*Máš problém s instalací? Napiš do komentářů pod [Video #1](link_sem)!*
+*Máš problém s instalací? Napiš do komentářů pod [Video #1] https://www.youtube.com/watch?v=Ohm8ULxYkJU&list=PLW5vnFw56fckGidTf3P9SMka6iLjST-8C!*

@@ -1,0 +1,82 @@
+# Robot Framework outputs
+output.xml
+log.html
+report.html
+selenium-screenshot-*.png
+*.png
+
+# Results folder
+results/
+test-results/
+reports/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Browser Library
+browser/
+node_modules/
+rfbrowser/
+
+# Test data (optional - comment out if you want to track test data)
+# *.csv
+# *.json
+# *.yaml
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Video files (if recording tests)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Screenshots from failures (keep structure, ignore content)
+screenshots/*.png
+!screenshots/.gitkeep

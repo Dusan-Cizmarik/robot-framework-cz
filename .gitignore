@@ -80,3 +80,7 @@ Thumbs.db
 # Screenshots from failures (keep structure, ignore content)
 screenshots/*.png
 !screenshots/.gitkeep
+robot-framework-cz/playwright-log.txt
+.claude/settings.local.json
+nul
+robot-framework-cz/resource/tests/playwright-log.txt

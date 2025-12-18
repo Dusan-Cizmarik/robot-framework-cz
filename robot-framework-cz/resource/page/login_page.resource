@@ -3,19 +3,20 @@ Resource    ../common.resource
 
 *** Keywords ***
 
-Otevřít Prohlížeč A Nasatavit Okno
-    [Documentation]    Otevření prohlížeče a nastavení velikosti okna
-    [Arguments]    ${url_stránky}    ${browser}    ${šířka}    ${výška}
-    Open Browser   ${url_stránky}             ${browser}
-    Set Viewport Size    width=${šířka}    height=${výška}
-
-Přihlásit Se Jako Uživatel
-    [Documentation]    Přihlášení pomocí standardního uživatele
-    [Arguments]    ${přihlašovací_jméno}    ${přihlašovací_heslo}
-    Fill Text    ${login_name}         ${přihlašovací_jméno}
-    Fill Text    ${password}           ${přihlašovací_heslo}
-    Click        ${login_button}
-
 Ověření Přihlášení
     [Documentation]    Ověření, že uživatel je přihlášen
-    Wait For Elements State    selector=${menu_button}    state=visible    timeout=${TIMEOUT}
+    Ověření Přítomnosti Na Stránce   ${menu_button}    context_name=když se chtěl přihlásit jako user
+
+Vyplní Email 
+    [Documentation]    Vyplní email jako ${přihlašovací_jméno}
+    [Arguments]    ${přihlašovací_jméno}
+    Vyplnění Text Field     ${login_name}         ${přihlašovací_jméno}    context_name=Když jsem chtěl vpylnit email od ${přihlašovací_jméno}
+
+Vyplní Heslo
+    [Documentation]    Vyplní email jako ${přihlašovací_heslo}
+    [Arguments]    ${přihlašovací_heslo}
+    Vyplnění Text Field    ${password}           ${přihlašovací_heslo}    context_name=Když jsem chtěl vyplnit heslo jako ${přihlašovací_heslo}
+
+Kliknutí Na Login Button
+    [Documentation]    Kliknutí na login button 
+    Kliknutí    ${login_button}    context_name=Když jsem chtěl kliknout na login     
